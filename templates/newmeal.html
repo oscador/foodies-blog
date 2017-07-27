@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Meal</title>
+    </head>
+    <body>
+		<h1>New Meal</h1>
+		
+		<form method="post" action="{{ url_for('suthankyou') }}" enctype="multipart/form-data">
+			<h2>Meal Date</h2>
+			<input type="date" name="date"/><br>
+
+			<h2>Meal Date</h2>
+			<input type="radio" name="mealtype" value="Breakfast" checked> Breakfast
+			<input type="radio" name="mealtype" value="Lunch"> Lunch
+			<input type="radio" name="mealtype" value="Dinner">Dinner<br>
+
+			<h2>Calories (0-3000)</h2>
+  			<input type="number" name="calories" min="1" max="3000">
+
+  			<h2>What did you eat?</h2>
+ 			<input type="text" name="description"><br><br>
+			<input type="file" name="file">
+			
+		  <input type="submit" value="SUBMIT"/>
+		</form>
+		</body>
+</html>
+ 
